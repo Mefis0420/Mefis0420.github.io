@@ -1,17 +1,38 @@
 <html>
-<body>
+<head>
 <script language="JavaScript">
-var a=parseFloat(prompt("d=",""));
-var b=parseFloat(prompt("x=",""));
-function dlugosc_drabiny (d, x) {
-return (d * d) + (x * x) ;
+function dlugosc(d,x)
+{
+d_liczba=parseFloat(d)
+d_liczba=parseFloat(x)
+dlugosc_wynik=r_liczba*r_liczba*h_liczba*h_liczba
+document.getElementsByName('obj')[0].value=dlugosc_wynik.toFixed(2); 
+alert("dlugosc="+dlugosc_wynik.toFixed(2)+" cm^3"); 
+pokaz1.innerHTML="dlugosc="+dlugosc_wynik.toFixed(2)+" cm^3"+"<br>"; . 
 }
-function kat_nachylenia (d, x) {
-return ;
-}
-
-document.write("dlugosc drabiny do kwadratu="+dlugosc_drabiny(d, x)+"<br>");
-document.write("kat nachylenia alfa="+kat_nachylenia(d, x)+"<br>");
 </script>
+</head>
+<body>
+obliczanie dlugosci drabiny i kątu
+<br> <br>
+<form name="formularz" action="..." onsubmit="dlugosc(this.wysokosc.value,this.podstawa.value);return false">
+Podaj d=
+<input size="6" name="wysokosc">
+Podaj x=
+<input size="6" name="podstawa">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+dlugosc=
+<input size="6" name="obj">
+Pc=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
 </body>
 </html>
