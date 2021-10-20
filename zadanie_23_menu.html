@@ -1,1 +1,165 @@
 
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Menu</title>
+        </head>
+            <body >
+
+<script language="JavaScript">
+                function WinOpen_Sadoch_1() {
+            window.open("zadanie_23.html","okienko90","height=450,width=1000,top=200,left=200");}
+                function WinOpen_Sadoch_2() {
+            window.open("zadanie_23_kod.html","okienko90","height=450,width=1000,top=200,left=200");}	
+                function WinOpen_Sadoch_3() {
+            window.open("zadanie_23_jskod.html","okienko90","height=450,width=1000,top=200,left=200");}
+              </script>               
+
+
+  <br>
+  <div class='center'>
+    <p class="awesome">MATEUSZ SADOCH GRUPA 2 KLASA 2P</p>
+  </div>
+<div>
+<button class="glow-on-hover" type="button" onclick="WinOpen_Sadoch_1(' ')" > zadanie </button>              
+<button class="glow-on-hover" type="button" onclick="WinOpen_Sadoch_2(' ')" > kod html </button>
+<button class="glow-on-hover" type="button" onclick="WinOpen_Sadoch_3(' ')" > kod js </button>
+
+</div>
+
+<style>
+    .center {
+  margin: 0 auto;
+}
+
+.awesome {
+  font-family: futura;
+  font-style: italic;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #313131;
+  font-size: 45px;
+  font-weight: bold;
+  position: absolute;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: #8e44ad;
+  }
+  20% {
+    color: #1abc9c;
+  }
+  30% {
+    color: #d35400;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: #34495e;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: #2980b9;
+  }
+  100% {
+    color: pink;
+  }
+}
+div {
+        margin-top: 150px; 
+         margin-left: 100px;
+         margin-right: 100px;
+}
+#head {
+    
+    width:100%;
+    text-align:center;
+    font-size: 2cm;
+    font-weight: bold;}
+body {
+    background-size: cover;
+    background-image: url("Akatsuki.gif");
+    margin:auto;
+}
+
+.glow-on-hover {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+</style>
+</body>
+</html>
