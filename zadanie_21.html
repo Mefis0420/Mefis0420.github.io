@@ -1,43 +1,43 @@
 <html>
 <head>
 <script language="JavaScript">
-function dlugosc(d,x)
+function obw(d,x)
 {
 d_liczba=parseFloat(d)
-d_liczba=parseFloat(x)
-dlugosc_wynik=r_liczba*r_liczba*h_liczba*h_liczba
-document.getElementsByName('obj')[0].value=dlugosc_wynik.toFixed(2); 
-alert("dlugosc="+dlugosc_wynik.toFixed(2)+" cm"); 
-pokaz1.innerHTML="dlugosc="+dlugosc_wynik.toFixed(2)+"<br>"; . 
+x_liczba=parseFloat(x)
+obw_wynik=d_liczba*d_liczba*x_liczba*x_liczba
+document.getElementsByName('obj')[0].value=obw_wynik.toFixed(2); 
+alert("długość drabiny="+obw_wynik.toFixed(2)+"    2^"); 
+pokaz1.innerHTML="długość drabiny="+obw_wynik.toFixed(2)+"<br>"; 
 }
-function kat(d,x)
+function Pc(d,x)
 {
 d_liczba=parseFloat(d)
-d_liczba=parseFloat(x)
-dlugosc_wynik=
-document.getElementsByName('kot')[0].value=kat_wynik.toFixed(2); 
-alert("kat="+kat_wynik.toFixed(2)+" cm"); 
-pokaz1.innerHTML="kat="+kat_wynik.toFixed(2)+"<br>"; . 
+x_liczba=parseFloat(x)
+Pc_wynik=d_liczba*x_liczba
+document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+alert("kąt nachylenia drabiny ="+Pc_wynik.toFixed(2));
+pokaz2.innerHTML="kąt nachylenia drabiny ="+Pc_wynik.toFixed(2);
 }
 </script>
 </head>
 <body>
-obliczanie dlugosci drabiny i kątu
+x
 <br> <br>
-<form name="formularz" action="..." onsubmit="dlugosc(this.wysokosc.value,this.podstawa.value);kat(this.wysokosc.value,this.podstawa.value);return false">
+<form name="formularz" action="..." onsubmit="obw(this.promien.value,this.wysokosc.value);Pc(this.promien.value,this.wysokosc.value);return false">
 Podaj d=
-<input size="6" name="wysokosc">
+<input size="6" name="promien">
 Podaj x=
-<input size="6" name="podstawa">
+<input size="6" name="wysokosc">
 <br>
 <br>
 <input TYPE="submit" Value="oblicz" >
 <br>
 <br>
-dlugosc=
+długość drabiny
 <input size="6" name="obj">
-kąt=
-<input size="6" name="kot">
+kąt nachylenia drabiny 
+<input size="6" name="pole">
 </form>
 <table>
 <tr id="pokaz1"></tr>
