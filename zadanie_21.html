@@ -10,12 +10,21 @@ document.getElementsByName('obj')[0].value=dlugosc_wynik.toFixed(2);
 alert("dlugosc="+dlugosc_wynik.toFixed(2)+" cm^3"); 
 pokaz1.innerHTML="dlugosc="+dlugosc_wynik.toFixed(2)+" cm^3"+"<br>"; . 
 }
+function kat(d,x)
+{
+d_liczba=parseFloat(d)
+d_liczba=parseFloat(x)
+dlugosc_wynik=
+document.getElementsByName('kot')[0].value=kat_wynik.toFixed(2); 
+alert("kat="+dlugosc_wynik.toFixed(2)+" cm^3"); 
+pokaz1.innerHTML="kat="+dlugosc_wynik.toFixed(2)+" cm^3"+"<br>"; . 
+}
 </script>
 </head>
 <body>
 obliczanie dlugosci drabiny i kątu
 <br> <br>
-<form name="formularz" action="..." onsubmit="dlugosc(this.wysokosc.value,this.podstawa.value);return false">
+<form name="formularz" action="..." onsubmit="dlugosc(this.wysokosc.value,this.podstawa.value);kat(this.wysokosc.value,this.podstawa.value);return false">
 Podaj d=
 <input size="6" name="wysokosc">
 Podaj x=
@@ -27,8 +36,8 @@ Podaj x=
 <br>
 dlugosc=
 <input size="6" name="obj">
-Pc=
-<input size="6" name="pole">
+kąt=
+<input size="6" name="kot">
 </form>
 <table>
 <tr id="pokaz1"></tr>
