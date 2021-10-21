@@ -14,7 +14,8 @@ function Pc(d,x)
 {
 d_liczba=parseFloat(d)
 x_liczba=parseFloat(x)
-Pc_wynik=d_liczba*x_liczba
+rady=Math.atan2(d_liczba, x_liczba);
+Pc_wynik=rady*(180/Math.PI);
 document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
 alert("kąt nachylenia drabiny ="+Pc_wynik.toFixed(2));
 pokaz2.innerHTML="kąt nachylenia drabiny ="+Pc_wynik.toFixed(2);
