@@ -5,7 +5,7 @@ function obw(d,x)
 {
 d_liczba=parseFloat(d)
 x_liczba=parseFloat(x)
-obw_wynik=d_liczba*d_liczba*x_liczba*x_liczba
+obw_wynik=Math.sqrt(d_liczba*d_liczba*x_liczba*x_liczba)
 document.getElementsByName('obj')[0].value=obw_wynik.toFixed(2); 
 alert("długość drabiny="+obw_wynik.toFixed(2)+"    2^"); 
 pokaz1.innerHTML="długość drabiny="+obw_wynik.toFixed(2)+"<br>"; 
