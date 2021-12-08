@@ -1,0 +1,49 @@
+<html>
+    <head>
+ <meta charset="UTF-8">
+ </head>
+<body>
+    <div style="color:red;font-size:50px;">
+
+ <table style="width:auto;text-align:center;">
+  <tr>
+    <th>promień koła r</th>
+    <th>liczba punktów n(r)</th>
+  </tr>
+  <tr>
+    <td>2.01</td>
+    <td id="t1"></td>
+  </tr>
+  <tr>
+    <td>4.5</td>
+    <td id="t2"></td>
+  </tr>
+    <tr>
+    <td>nuemr w dzienniku + 100 = 122</td>
+    <td id="t3"></td>
+        <tr>
+    <td>nuemr w dzienniku + 1000 = 1022</td>
+    <td id="t4"></td>
+  </tr>
+</table> <script language="JavaScript">
+var r1 = 2.01;
+var r2 = 4.5;
+var r3 = 122;
+var r4 = 1022;
+ var r;
+ for(var i=1;i<=4;i++){
+ if(i==1){r=r1}
+ else if(i==2){r=r2}
+ else if(i==3){r=r3}
+ else if(i==4){r=r4};
+var licznik=0;
+for(var y=-Math.round(r)-1; y<=Math.round(r)+1;y++){
+for(var x=-Math.round(r)-1; x<=Math.round(r)+1;x++){
+d=Math.sqrt(y*y+x*x);
+if(d<=r){licznik++};
+}}
+document.getElementById("t"+i).innerHTML = "licznik = "+licznik;}
+ </script>
+</div>
+</body>
+</html>

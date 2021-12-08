@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script language="JavaScript">
+var Sad1 = prompt("jedna liczba z przedziały <20,60> ");
+var Sad2 = prompt("druga liczba z przedziały <20,60> ");
+var Sad3 = prompt("wartość początkowa wielkości tekstu ");
+var Sad4 = prompt("dowolny tekst");
+if(Sad1<Sad2){
+ for(a=1;a<=20+Sad3;a++){
+document.write("<p style=\"font-size:"+a*5+"px; color: black;\"><br>"+Sad4+"<br></p>");
+ }}
+ else if(Sad2<Sad1){
+  for(a=20;a<=20-Sad3;a--){
+document.write("<p style=\"font-size:"+a*5+"px; color: black;\"><br>"+Sad4+"<br></p>");
+ }}else {
+	document.write("Error");
+ }
+</script>
+</div>
+</body>
+</html>
