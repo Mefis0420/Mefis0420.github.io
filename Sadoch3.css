@@ -1,7 +1,8 @@
 div {
-  background-color:gold;
+background-color:red;
 }
-@media handheld, tv {
-  div {
-    background-color:red;
-  }}
+@media projection, screen, tty, tv{
+	div {
+	background-color:green;
+	}
+}
